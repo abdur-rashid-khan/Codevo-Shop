@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codevo Shop</title>
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="font wasame/css/all.min.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/reponsive.css">
+</head>
+<body onload="loading()">
+    <div id="loading"></div>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="menu">
+                    <div class="logo pt-3">
+                        <a class="" href="#" style="font-style: italic; color: rgba(10, 9, 9, 0.692); font-weight: bold;"> COD <span class="text-info">E</span>VOS</a>
+                    </div>
+                    <div class="lgMenu">
+                        <ul>
+                            <li><a href="#hero">HOME</a></li>
+                            <li><a href="#product">PRODUCTS</a></li>
+                            <li><a href="#recent">NEW RECENT</a></li>
+                            <li><a href="#blog">BLOG</a></li> 
+                            <li><a href="#about">ABOUT</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobileManu">
+                        <div class="hoverMenu" onclick="openManu()">
+                            <a href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                            </a>
+                        </div>
+                        <div id="myNav" class="overaly">
+                            <a href="javascript:void(0)" id="closeBtn"  onclick="closeManu()">&times;</a>
+                            <div class="overlay-content">
+                                <a href="#hero" onclick="closeManu()">HOME</a>
+                                <a href="#product" onclick="closeManu()">PRODUCTS</a>
+                                <a href="#recent" onclick="closeManu()">NEW RECENT</a>  
+                                <a href="#blog" onclick="closeManu()">BLOG</a>
+                                <a href="#about" onclick="closeManu()">ABOUT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="hero" class="js--services-section">
+		<div  class="container">
+			<div id="slider" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#slider" data-slide-to="0" class="active"></li>
+					<li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>  
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<img class="img-fluid" id="imgSazing" src="resources/images/banner_1.png" alt="">
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<div class="heroText text-center py-5">
+									<h2>New Inspiration 2021</h2>
+									<h1>CLOTHING MADE FOR YOU ! </h1>
+									<P>Trending from men and women style collection</P>
+									<a href="javascript:void(0)" class="btn btn-outline-dark ">SHOP NOW </a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item  ">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<img class="img-fluid" id="imgSazing" src="resources/images/banner_2.png" alt="">
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<div class="heroText text-center py-5">
+									<h2>New Inspiration 2021</h2>
+									<h1>CLOTHING MADE FOR YOU ! </h1>
+									<P>Trending from men and women style collection</P>
+									<a href="javascript:void(0)" class="btn btn-outline-dark ">SHOP NOW </a>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <div class="carousel-item">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<img class="img-fluid" id="imgSazing" src="resources/images/banner_3.png" alt="">
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6">
+								<div class="heroText text-center py-5">
+									<h2>New Inspiration 2021</h2>
+									<h1>CLOTHING MADE FOR YOU ! </h1>
+									<P>Trending from men and women style collection</P>
+									<a href="javascript:void(0)" class="btn btn-outline-dark ">SHOP NOW </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a id="heroArro" class="carousel-control-prev pl-4" href="#slider" role="button" data-slide="prev">
+					<span><i class="fas fa-arrow-left"></i></span> 
+				</a>
+				<a id="heroArro" class="carousel-control-next pr-4" href="#slider" role="button" data-slide="next">
+					<span ><i class="fas fa-arrow-right"></i></span> 
+				</a>
+			</div>
+		</div>
+	</section>
+    <section class="style">
+        <div class="container">
+            <div id="headingConten" class="py-5" data-aos="fade-right">
+                <h2>Allow your style to match your ambition!</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade-up"
+                data-aos-anchor-placement="top">
+                    <div class="styleImg">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/cat1.jpg" alt="cat1"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-light">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade-up"
+                data-aos-anchor-placement="top">
+                    <div class="styleImg">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/cat2.jpg" alt="cat1"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-success">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade-up"
+                data-aos-anchor-placement="top">
+                    <div class="styleImg">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/cat3.jpg" alt="cat1"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-dark">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="latest" class="py-5" data-aos="fade-up"
+    data-aos-anchor-placement="top">
+        <div class="container">
+            <div id="headingConten">
+                <h2 style="font-weight: 800;">Latest Products</h2>
+            </div>
+            <div style="cursor: pointer;" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1s" data-aos="fade-right">
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic7.png" alt="pic7">
+                        </div>
+                        <div class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic9.png" alt="pic8">
+                        </div>
+                        <div class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic11.png" alt="pic9">
+                        </div>
+                        <div class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product" class="py-5">
+        <div class="container">
+            <div class="productBtn text-center" data-aos="fade-right"
+            data-aos-anchor-placement="top">
+                <button class="mt-4" type="button" data-filter="all">All</button>
+                <button class="mt-4" type="button" data-filter=".tredition">Tredition Products</button>
+                <button class="mt-4" type="button" data-filter=".special">Special Products</button>
+                <button class="mt-4" type="button" data-filter=".featured">Featured Products</button>
+            </div>
+            <div class="row mt-5 mixItUP">
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic1.png" class="img-fluid" alt="products 1">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic2.png" class="img-fluid" alt="products 2">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 " id="img_sazing">
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic3.png" class="img-fluid" alt="products 3">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic4.png" class="img-fluid" alt="products 4">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing" >
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic5.png" class="img-fluid" alt="products 5">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix tredition" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic6.png" class="img-fluid" alt="products 6">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix special " data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic7.png" class="img-fluid" alt="products 7">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix special" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic8.png" class="img-fluid" alt="products 8">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix special" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic9.png" class="img-fluid" alt="products 9">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix special" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic10.png" class="img-fluid" alt="products 10">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix special" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic11.png" class="img-fluid" alt="products 11">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing" >
+                    <div class="productsContent mix special" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic12.png" class="img-fluid" alt="products 12">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing" >
+                    <div class="productsContent mix featured" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic13.png" class="img-fluid" alt="products 13">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing">
+                    <div class="productsContent mix featured" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic14.png" class="img-fluid" alt="products 14">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4" id="img_sazing" >
+                    <div class="productsContent mix featured" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="productImg">
+                            <img id="extaImg" src="resources/images/pic15.png" class="img-fluid" alt="products 15">
+                        </div>
+                        <div class="productsText">
+                            <div class="text">
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-heart"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-eye"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-share"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="productsPrice">
+                            <div class="productsPriceText">
+                                <h3>Men Casual Shoe</h3>
+                                <ul>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-star-half-alt"></i></span>
+                                    </li>
+                                    <li>
+                                        <span><i class="far fa-star"></i></span>
+                                    </li>
+                                </ul>
+                                <h4> <span style="font-size: 2rem; color: rgb(211, 0, 0);">$</span> 500.00</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="brands" class="py-5" data-aos="fade-up"
+    data-aos-anchor-placement="top">
+        <div class="container">
+            <div class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1s" data-aos="fade-right">
+                <div class="items text-center">
+                    <div class="img-thum">
+                        <img id="reebook" class="img-fluid" src="resources/images/brand_1.png" alt="brand_1">
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="img-thum">
+                        <img id="reebook" class="img-fluid" src="resources/images/brand_2.png" alt="brand_2">
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="img-thum">
+                        <img id="reebook" class="img-fluid" src="resources/images/brand_3.png" alt="brand_3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="blog" class="style" style="background : rgba(51, 51, 51, 0);">
+        <div class="container">
+            <div id="headingConten" class="py-5">
+                <h2>Blog</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="styleImg" data-aos="fade-right"
+                    data-aos-anchor-placement="top">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/grid_1.jpg" alt="grid_1"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-light">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="styleImg" data-aos="fade-down"
+                    data-aos-anchor-placement="top">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/grid_2.jpg" alt="grid_2"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-success">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="styleImg" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="imgOveraly"> 
+                                <img class="img-fluid" src="resources/images/grid_3.jpg" alt="grid_3"> 
+                        </div>
+                        <div class="styleText">
+                            <div class="text">
+                                <h2>Shop for Man </h2>
+                                <p>155 Products </p>
+                                <a href="#" class="btn btn-outline-dark">SHOP NOW </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent" id="latest" class="py-5" data-aos="fade-up"
+    data-aos-anchor-placement="top">
+        <div class="container">
+            <div id="headingConten">
+                <h2 style="font-weight: 800;">Recent View</h2>
+            </div>
+            <div style="cursor: pointer;" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="1s" data-aos="fade-right">
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic15.png" alt="pic15">
+                        </div>
+                        <div style="color:#333;" class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div style="color:rgb(189, 170, 0);" class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic12.png" alt="pic12">
+                        </div>
+                        <div style="color:#333;" class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div style="color:rgb(189, 170, 0);" class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="items text-center">
+                    <div class="items ">
+                        <div class="img-thum text-center ml-5">
+                            <img class="img-fluid" src="resources/images/pic6.png" alt="pic6">
+                        </div>
+                        <div style="color:#333;" class="text">
+                            <h4>Men Casual Shoe</h4>
+                        </div>
+                        <div style="color:rgb(189, 170, 0);" class="star-icon">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support" >
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 py-5">
+                    <div class="allSupports" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="supportContent">
+                            <div class="supportIcon">
+                                <span><i class="fas fa-plane"></i></span>
+                            </div> 
+                        </div>
+                        <div class="supportText">
+                            <h3>FREE SHIPPING WORLD WIDE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 py-5">
+                    <div class="allSupports" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="supportContent">
+                            <div class="supportIcon">
+                                <span><i class="fas fa-wallet"></i></span>
+                            </div> 
+                        </div>
+                        <div class="supportText">
+                            <h3>100% MONEY BACK GUARANTEE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 py-5">
+                    <div class="allSupports" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="supportContent">
+                            <div class="supportIcon">
+                                <span><i class="fas fa-headset"></i></span>
+                            </div> 
+                        </div>
+                        <div class="supportText">
+                            <h3>24/7 ONLINE SUPPORT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3 py-5">
+                    <div class="aboutContent" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="aboutHeader">
+                            <h2>EXTRAS</h2>
+                        </div>
+                        <div class="aboutItems mt-4">
+                            <ul>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                                <li><a href="#">Specials</a></li>
+                                <li><a href="#"> Gift Certificates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 py-5">
+                    <div class="aboutContent" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="aboutHeader">
+                            <h2>INFORMATION</h2>
+                        </div>
+                        <div class="aboutItems mt-4">
+                            <ul>
+                                <li><a href="#">About US</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 py-5">
+                    <div class="aboutContent" data-aos="fade-up"
+                    data-aos-anchor-placement="top">
+                        <div class="aboutHeader">
+                            <h2>MY ACCOUNT</h2>
+                        </div>
+                        <div class="aboutItems mt-4">
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3 py-5">
+                    <div class="aboutContent">
+                        <div class="aboutHeader">
+                            <h2>CONTACT US</h2>
+                        </div>
+                        <div class="aboutItems mt-4">
+                            <ul>
+                                <li><a href="#"><span class="mr-4"><i class="fas fa-map-marker-alt"></i></span>7131 Dreamville, USA</a></li>
+                                <li><a href="#"> <span class="mr-4"><i class="far fa-envelope"></i></span>compa@gmail.com</a></li>
+                                <li><a href="#"> <span class="mr-4"><i class="fas fa-mobile"></i></span>+88888888888</a></li>
+                                <li><a href="#"><span class="mr-4"><i class="fas fa-paper-plane"></i></span> Dream City, USA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 text-center">
+                <h2 style="font-style: italic;">Designer : <span class="text-info"> Rashid Khan</span></h2>
+            </div>
+        </div>
+    </footer>
+    <div id="popUp" data-aos="zoom-in-down">
+        <div class="popUpContent">
+            <div id="popupClose" onclick="closePopup()">&times;</div>
+            <div class="popUpImg">
+                <img class="img-fluid" src="resources/images/cat2.jpg" alt="">
+            </div>
+            <div class="popUpText">
+                <h1>Get Discount <span style="color: rgb(0, 161, 22);">30% </span>Off</h1>
+                <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!</p>
+                <input class="form-control my-3"type="text" placeholder="Enter your email">
+                <a class="btn btn-dark d-block text-light" style="font-size: 2rem
+                ;">Subscrib</a>
+            </div>
+        </div>
+    </div> 
+    <script src="vendors/js/jQuery.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="vendors/js/aos.js"></script> -->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/mixitup.min.js"></script>
+    <script src="vendors/js/owl.carousel.min.js"></script>
+    <script src="resources/js/min.js"></script>
+</body>
+</html>
